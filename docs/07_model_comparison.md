@@ -29,11 +29,11 @@ ax.bar(x,          results['Precision'], width, label='Precision')
 ax.bar(x + width,  results['F1'],        width, label='F1')
 ```
 
-![Model Performance Comparison](../assets/plots/model_comparison_bars.png)
+![Model Performance Comparison](assets/plots/model_comparison_bars.png)
 
 ### F1 Score Focused View
 
-![F1 Score Comparison](../assets/plots/f1_comparison.png)
+![F1 Score Comparison](assets/plots/f1_comparison.png)
 
 ---
 
@@ -46,7 +46,7 @@ for proba, name, color in model_probas:
     ax.plot(fpr, tpr, label=f'{name} (AUC={auc:.3f})')
 ```
 
-![ROC Curves](../assets/plots/roc_curves.png)
+![ROC Curves](assets/plots/roc_curves.png)
 
 All four models achieve AUC-ROC above 0.97 — they all have strong discriminative ability at the probability score level. The separation between models becomes visible in the upper-left region (high TPR, low FPR), where XGBoost maintains the best performance.
 
@@ -62,7 +62,7 @@ for proba, name, color in model_probas:
 ax.axhline(y=y_test.mean(), linestyle='--', label='Baseline (random)')
 ```
 
-![PR Curves](../assets/plots/pr_curves.png)
+![PR Curves](assets/plots/pr_curves.png)
 
 The PR curve is the most honest evaluation metric for imbalanced datasets. All models significantly outperform the random baseline (dashed line at ~0.034). XGBoost maintains the highest precision across all recall levels between 0.6 and 0.85 — the operationally relevant range.
 
@@ -70,7 +70,7 @@ The PR curve is the most honest evaluation metric for imbalanced datasets. All m
 
 ## Confusion Matrices — All Models
 
-![All Confusion Matrices](../assets/plots/all_confusion_matrices.png)
+![All Confusion Matrices](assets/plots/all_confusion_matrices.png)
 
 Reading the matrices left to right:
 
