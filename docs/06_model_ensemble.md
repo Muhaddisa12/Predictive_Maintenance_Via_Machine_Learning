@@ -76,7 +76,7 @@ Classification Report:
 
 ## Confusion Matrix
 
-![Ensemble Confusion Matrix](../assets/plots/cm_ensemble.png)
+![Ensemble Confusion Matrix](assets/plots/cm_ensemble.png)
 
 ```
 Actual\Predicted   Normal    Failure
