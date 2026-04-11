@@ -143,10 +143,10 @@ DATASET: UCI AI4I 2020
 ## Section 2 — Prediction Result Banner
 
 ![Result Banner — Normal](assets/screenshots/banner_normal.png)
-*Normal operating condition — green border, 5.2% probability*
+*Normal operating condition — green border, 0.0% probability*
 
 ![Result Banner — Failure](assets/screenshots/banner_failure.png)
-*Failure predicted — red border, 87.4% probability*
+*Failure predicted — red border, 98.0% probability*
 
 The banner is the most prominent element after pressing RUN ANALYSIS. It communicates the result immediately and unambiguously — no scrolling required.
 
