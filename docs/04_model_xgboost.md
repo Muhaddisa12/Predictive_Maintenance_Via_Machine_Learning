@@ -73,7 +73,7 @@ Classification Report:
 
 ## Confusion Matrix
 
-![XGBoost Confusion Matrix](../assets/plots/cm_xgboost.png)
+![XGBoost Confusion Matrix](assets/plots/cm_xgboost.png)
 
 ```
 Actual\Predicted   Normal    Failure
@@ -131,7 +131,7 @@ importance_df = pd.DataFrame({
 }).sort_values('Importance', ascending=False)
 ```
 
-![XGBoost Feature Importance](../assets/plots/feature_importance_xgboost.png)
+![XGBoost Feature Importance](assets/plots/feature_importance_xgboost.png)
 
 **Top features by importance (Gain):**
 
@@ -159,7 +159,7 @@ shap_values = explainer.shap_values(X_test)
 shap.summary_plot(shap_values, X_test, feature_names=feature_cols)
 ```
 
-![SHAP Summary Plot](../assets/plots/shap_summary.png)
+![SHAP Summary Plot](assets/plots/shap_summary.png)
 
 **How to read the SHAP beeswarm plot:**
 - Each dot represents one prediction
