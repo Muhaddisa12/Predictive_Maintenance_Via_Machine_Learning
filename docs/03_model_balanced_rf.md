@@ -59,7 +59,7 @@ Classification Report:
 
 ## Confusion Matrix
 
-![Balanced RF Confusion Matrix](../assets/plots/cm_balanced_rf.png)
+![Balanced RF Confusion Matrix](assets/plots/cm_balanced_rf.png)
 
 ```
 Actual\Predicted   Normal    Failure
@@ -116,7 +116,7 @@ At scale across 10,000 machines:
 
 The AUC-ROC of **0.974** means that in 97.4% of random pairings of a failure instance and a normal instance, the model correctly assigns a higher probability score to the failure. This is a strong discriminative score.
 
-![ROC Curve - All Models](../assets/plots/roc_curves.png)
+![ROC Curve - All Models](assets/plots/roc_curves.png)
 
 ---
 
