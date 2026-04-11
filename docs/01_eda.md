@@ -68,7 +68,7 @@ fig, axes = plt.subplots(1, 2, figsize=(12, 4))
 failure_by_type = df.groupby('Type')['Machine failure'].mean() * 100
 ```
 
-![Machine Type Analysis](/assets/plots/machine_type_distribution.png)
+![Machine Type Analysis](assets/plots/machine_type_distribution.png)
 
 | Type | Description | Count | Failure Rate |
 |---|---|---|---|
@@ -93,7 +93,7 @@ for col in sensor_cols:
     plt.hist(df[df['Machine_failure']==1][col], bins=40, alpha=0.6, label='Failure')
 ```
 
-![Sensor Distributions](/assets/plots/sensor_distributions.png)
+![Sensor Distributions](assets/plots/sensor_distributions.png)
 
 **Key observations per sensor:**
 
@@ -115,7 +115,7 @@ sns.boxplot(data=df.astype({'Machine_failure': str}),
             palette={'0': '#4C9BE8', '1': '#E86B4C'})
 ```
 
-![Sensor Boxplots](/assets/plots/sensor_boxplots.png)
+![Sensor Boxplots](assets/plots/sensor_boxplots.png)
 
 The boxplots confirm the histograms with cleaner separation:
 - **Rotational speed:** Failure median is noticeably lower — machines running slower are under more strain
@@ -131,7 +131,7 @@ corr = df[sensor_cols + ['Machine_failure']].corr()
 sns.heatmap(corr, annot=True, fmt='.2f', cmap='RdYlBu_r')
 ```
 
-![Correlation Heatmap](/assets/plots/correlation_heatmap.png)
+![Correlation Heatmap](assets/plots/correlation_heatmap.png)
 
 **Correlation with `Machine_failure` (strongest first):**
 
@@ -158,7 +158,7 @@ failure_modes = ['TWF', 'HDF', 'PWF', 'OSF', 'RNF']
 mode_counts = df[failure_modes].sum().sort_values(ascending=False)
 ```
 
-![Failure Mode Distribution](/assets/plots/failure_mode_distribution.png)
+![Failure Mode Distribution](assets/plots/failure_mode_distribution.png)
 
 | Failure Mode | Count | Root Cause |
 |---|---|---|
