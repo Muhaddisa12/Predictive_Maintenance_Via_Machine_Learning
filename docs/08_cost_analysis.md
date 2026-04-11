@@ -84,9 +84,9 @@ costs[name] = {
 
 ## Cost Visualisation
 
-![Cost Breakdown](../assets/plots/cost_breakdown.png)
+![Cost Breakdown](assets/plots/cost_breakdown.png)
 
-![Total Cost Comparison](../assets/plots/total_cost_comparison.png)
+![Total Cost Comparison](assets/plots/total_cost_comparison.png)
 
 ---
 
