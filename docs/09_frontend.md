@@ -83,7 +83,7 @@ PredictMaint Dashboard
 
 ## Section 1 — Sidebar: Sensor Input Controls
 
-![Sidebar](../assets/screenshots/sidebar.png)
+![Sidebar](assets/screenshots/sidebar.png)
 
 The sidebar is the operator's control panel. It contains all machine configuration inputs and is always visible regardless of which tab is active.
 
@@ -142,10 +142,10 @@ DATASET: UCI AI4I 2020
 
 ## Section 2 — Prediction Result Banner
 
-![Result Banner — Normal](../assets/screenshots/banner_normal.png)
+![Result Banner — Normal](assets/screenshots/banner_normal.png)
 *Normal operating condition — green border, 5.2% probability*
 
-![Result Banner — Failure](../assets/screenshots/banner_failure.png)
+![Result Banner — Failure](assets/screenshots/banner_failure.png)
 *Failure predicted — red border, 87.4% probability*
 
 The banner is the most prominent element after pressing RUN ANALYSIS. It communicates the result immediately and unambiguously — no scrolling required.
@@ -171,7 +171,7 @@ The banner shows two values simultaneously:
 
 ## Section 3 — Risk Gauge
 
-![Risk Gauge](../assets/screenshots/gauge.png)
+![Risk Gauge](assets/screenshots/gauge.png)
 
 The circular gauge gives an immediate visual sense of how close to failure the machine is — even if the binary prediction says "normal", a 45% probability reading tells a different story than 2%.
 
@@ -206,7 +206,7 @@ def make_gauge(prob):
 
 ## Section 4 — Sensor Range Chart
 
-![Sensor Range Chart](../assets/screenshots/sensor_ranges.png)
+![Sensor Range Chart](assets/screenshots/sensor_ranges.png)
 
 This chart answers the question: *which of the five sensors is in the danger zone?*
 
@@ -235,7 +235,7 @@ A sensor bar appearing red immediately tells the operator which reading is causi
 
 ## Section 5 — Computed Features Panel
 
-![Computed Features](../assets/screenshots/computed_features.png)
+![Computed Features](assets/screenshots/computed_features.png)
 
 The three engineered features — Temp_diff, Power, and Wear×Torque — are computed live from the slider inputs and displayed here. This makes the feature engineering transparent and explainable.
 
@@ -254,7 +254,7 @@ An operator can directly compare these computed values against the known failure
 
 ## Section 6 — Feature Importance Chart
 
-![Feature Importance](../assets/screenshots/feature_importance.png)
+![Feature Importance](assets/screenshots/feature_importance.png)
 
 Horizontal bar chart showing the XGBoost feature importance scores. Engineered features are highlighted in amber, raw sensor features in dark blue — making it visually clear that the domain-informed features carry the most predictive weight.
 
@@ -280,7 +280,7 @@ colors = [
 
 ## Section 7 — Failure Flag Cards
 
-![Failure Flags](../assets/screenshots/failure_flags.png)
+![Failure Flags](assets/screenshots/failure_flags.png)
 
 When a physical failure threshold is crossed, a dedicated card appears for each triggered failure mode. These only appear when relevant — a healthy machine shows no cards.
 
@@ -330,7 +330,7 @@ st.session_state.history.append({
 
 ## Section 9 — Model Performance Tab
 
-![Model Performance Tab](../assets/screenshots/model_performance_tab.png)
+![Model Performance Tab](assets/screenshots/model_performance_tab.png)
 
 The second tab shows four key metric cards at the top, followed by the full model comparison table and business impact analysis — accessible without leaving the app.
 
@@ -359,7 +359,7 @@ with c4: st.metric("Recall",    "0.765")
 
 **Result:** Normal — ~2–4% probability. No failure flags. All sensor bars green.
 
-![Scenario 1](../assets/screenshots/scenario_healthy.png)
+![Scenario 1](assets/screenshots/scenario_healthy.png)
 
 ---
 
@@ -376,7 +376,7 @@ with c4: st.metric("Recall",    "0.765")
 
 **Result:** Failure predicted. OSF flag card appears. Tool wear and torque bars in red zone.
 
-![Scenario 2](../assets/screenshots/scenario_osf.png)
+![Scenario 2](assets/screenshots/scenario_osf.png)
 
 ---
 
@@ -392,7 +392,7 @@ with c4: st.metric("Recall",    "0.765")
 
 **Result:** Failure predicted. HDF flag card appears. RPM bar in red zone.
 
-![Scenario 3](../assets/screenshots/scenario_hdf.png)
+![Scenario 3](assets/screenshots/scenario_hdf.png)
 
 ---
 
@@ -410,7 +410,7 @@ with c4: st.metric("Recall",    "0.765")
 
 **Result:** The model may return 20–40% probability without triggering a binary failure prediction — demonstrating that the probability score carries information beyond the yes/no output.
 
-![Scenario 4](../assets/screenshots/scenario_borderline.png)
+![Scenario 4](assets/screenshots/scenario_borderline.png)
 
 ---
 
