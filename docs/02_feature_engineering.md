@@ -62,7 +62,7 @@ df['Temp_diff'] = df['Process_temperature__K'] - df['Air_temperature__K']
 
 Using `Process_temp` and `Air_temp` separately gives the model less information than providing their difference directly.
 
-![Temp Diff Distribution](../assets/plots/engineered_features.png)
+![Temp Diff Distribution](assets/plots/engineered_features.png)
 
 **Distribution insight:** Normal machines maintain a larger temperature differential. When `Temp_diff` is small (poor heat dissipation), failure probability rises significantly.
 
