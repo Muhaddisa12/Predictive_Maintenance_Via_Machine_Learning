@@ -109,7 +109,7 @@ Classification Report:
 
 ## Confusion Matrix
 
-![RF Threshold Confusion Matrix](../assets/plots/cm_rf_threshold.png)
+![RF Threshold Confusion Matrix](assets/plots/cm_rf_threshold.png)
 
 ```
 Actual\Predicted   Normal    Failure
@@ -160,7 +160,7 @@ prec, rec, _ = precision_recall_curve(y_test, y_proba_rf)
 plt.plot(rec, prec)
 ```
 
-![PR Curves](../assets/plots/pr_curves.png)
+![PR Curves](assets/plots/pr_curves.png)
 
 The curve drops steeply as recall increases past ~0.8, meaning achieving high recall requires accepting very low precision. XGBoost's PR curve maintains higher precision at equivalent recall levels.
 
