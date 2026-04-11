@@ -48,7 +48,7 @@ fig, axes = plt.subplots(1, 2, figsize=(12, 4))
 # Bar chart + Pie chart (see notebook for full code)
 ```
 
-![Class Distribution](/assets/plots/class_distribution.png)
+![Class Distribution](assets/plots/class_distribution.png)
 
 | Class | Count | Percentage |
 |---|---|---|
