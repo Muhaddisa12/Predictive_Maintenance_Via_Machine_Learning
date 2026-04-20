@@ -8,10 +8,10 @@
 
 | Model | Recall | Precision | F1 | AUC-ROC | Recommended? |
 |---|---|---|---|---|---|
-| Balanced Random Forest | 0.941 | 0.234 | 0.375 | 0.974 | ❌ Production |
-| **XGBoost** | **0.765** | **0.650** | **0.703** | **0.978** | ✅ **Primary** |
-| RF + Threshold Tuning | 1.000 | 0.034 | 0.066 | 0.974 | ❌ |
-| Soft Voting Ensemble | 0.794 | 0.587 | 0.675 | 0.976 | ✅ High-risk use |
+| Balanced Random Forest | 0.941 | 0.234 | 0.375 | 0.974 |  Production |
+| **XGBoost** | **0.765** | **0.650** | **0.703** | **0.978** |  **Primary** |
+| RF + Threshold Tuning | 1.000 | 0.034 | 0.066 | 0.974 |  |
+| Soft Voting Ensemble | 0.794 | 0.587 | 0.675 | 0.976 |  High-risk use |
 
 ---
 
