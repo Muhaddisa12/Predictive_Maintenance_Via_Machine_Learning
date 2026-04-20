@@ -100,12 +100,12 @@ At scale across 10,000 machines:
 
 ## When to Use This Model
 
-✅ Use Balanced RF when:
+ Use Balanced RF when:
 - Missing a failure has **catastrophic, irreversible consequences** (safety-critical equipment)
 - False alarms are cheap (fully automated inspection line, no human time required)
 - The cost of a missed failure is orders of magnitude higher than the cost of a false alarm
 
-❌ Do not use for:
+ Do not use for:
 - Standard manufacturing operations where maintenance team time is limited
 - Any context where alert fatigue is a concern
 - Long-term deployment where team trust in the system matters
