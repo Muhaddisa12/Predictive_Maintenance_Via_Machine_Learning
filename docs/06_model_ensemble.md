@@ -130,13 +130,13 @@ Ensemble:
 
 ## When to Choose Ensemble Over XGBoost
 
-✅ Choose Ensemble when:
+Choose Ensemble when:
 - You are operating **safety-critical equipment** (high-pressure reactors, chemical processing units) where missing a failure has severe safety or environmental consequences
 - The cost of a missed failure far exceeds the cost of a false alarm (e.g., missed failure = $500,000+ vs false alarm = $500)
 - Your maintenance team is large enough to investigate 1.3 alerts per day reliably
 - Catching 10 more failures per 1,000 machines is worth the extra 49 false alarms
 
-✅ Choose XGBoost when:
+ Choose XGBoost when:
 - You want the **maintenance team to trust the system** (higher precision builds long-term confidence)
 - False alarms have significant cost in time, resources, or team morale
 - You need a sustainable system that the team will actually use for years
