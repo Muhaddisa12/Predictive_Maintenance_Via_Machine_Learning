@@ -143,7 +143,7 @@ Raw Data (10,000 rows)
 | Model | Recall | Precision | F1 | AUC-ROC |
 |---|---|---|---|---|
 | Balanced Random Forest | 0.941 | 0.234 | 0.375 | 0.974 |
-| **XGBoost** ✅ | **0.765** | **0.650** | **0.703** | **0.978** |
+| **XGBoost**  | **0.765** | **0.650** | **0.703** | **0.978** |
 | RF + Threshold Tuning | 1.000 | 0.034 | 0.066 | 0.974 |
 | Soft Voting Ensemble | 0.794 | 0.587 | 0.675 | 0.976 |
 
