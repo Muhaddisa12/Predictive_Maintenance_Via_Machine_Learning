@@ -1,4 +1,4 @@
-# Model 2 — XGBoost (Best Model ✅)
+# Model 2 — XGBoost (Best Model )
 
 [← Back to README](../README.md) | [← Balanced RF](03_model_balanced_rf.md) | [Next: RF + Threshold →](05_model_rf_threshold.md)
 
