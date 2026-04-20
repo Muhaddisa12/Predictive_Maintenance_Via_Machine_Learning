@@ -168,12 +168,12 @@ The curve drops steeply as recall increases past ~0.8, meaning achieving high re
 
 ## When This Approach Is Useful
 
-✅ Use threshold tuning when:
+ Use threshold tuning when:
 - Your model's probability scores are well-calibrated and the PR curve has a smooth, gradual descent
 - You want to tune the operating point after deployment (e.g., stricter during high-risk periods)
 - You are combining it with a strong base model (XGBoost or gradient boosting)
 
-❌ Avoid when:
+ Avoid when:
 - The base model's probability distributions overlap heavily (as here)
 - You need both reasonable precision AND recall simultaneously
 
